@@ -1,0 +1,22 @@
+<h1>Angular Application</h1>
+
+<table>
+  <title>Mongo Data : Angular -> Nginx -> Node -> Mongo</title>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let customer of customers; index as i;">
+      <td>{{i + 1}}</td>
+      <td>{{ customer.name }}</td>
+      <td>{{ customer.age }}</td>
+    </tr>
+    <!-- <tr *ngIf="!customers.length">
+      <td colspan="3">Customers not found</td>
+    </tr> -->
+  </tbody>
+</table>
